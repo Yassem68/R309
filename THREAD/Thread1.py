@@ -12,3 +12,4 @@ if __name__ == "__main__":
 
     finish = time.perf_counter()
     print(f"Finished in {round(finish-start, 2)} second(s)")
+# Path: THREAD/Multiprocess.py
