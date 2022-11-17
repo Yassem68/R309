@@ -23,3 +23,5 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 
 finish = time.perf_counter()
 print(f'Finished in {round(finish-start, 2)} second(s)')
+
+# attention, ça va vous télécharger l'image que vous avez mis dans la liste img_urls
