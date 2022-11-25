@@ -19,12 +19,11 @@ class MainWindow(QMainWindow):
         self.text = QLineEdit("")
         conv = QPushButton("Convertir")
         self.list = QComboBox()
-        self.resize(400, 200)
-        self.list.addItem("°C -> K")
+        self.list.addItem("C -> K")
         self.list.addItem("K -> °C")
         self.lab3 = QLabel("Conversion")
-        self.lab4 = QLabel("K")
-        self.lab5 = QLabel("")
+        self.lab4 = QLabel("")
+        self.lab5 = QLabel("K")
         bouton = QPushButton("?")
 
         grid.addWidget(self.lab1, 0, 0)
@@ -33,7 +32,7 @@ class MainWindow(QMainWindow):
         grid.addWidget(conv, 2, 1)
         grid.addWidget(self.list, 2, 3)
         grid.addWidget(self.lab3, 3, 0)
-        grid.addWidget(self.lab4, 3, 2)
+        grid.addWidget(self.lab4, 3, 1)
         grid.addWidget(self.lab5, 3, 2)
         grid.addWidget(bouton, 3, 3)
 
@@ -45,11 +44,11 @@ class MainWindow(QMainWindow):
     def _messagebox(self):
         msg = QMessageBox()
         msg.setWindowTitle("Help")
-        msg.setText("Cette application nous permet de convertir un nombre soit de Kelvin vers Celcius, soit de Celcuis vers Kelvin")
+        msg.setText("Cette application permet de convertir un nombre soit de Kelvin vers Celcius, soit de Celcuis vers Kelvin")
         msg.exec()
 
     def _actionchanger(self):
-        if self.list.currentText() == "K -> C°":
+        if self.list.currentText() == "K -> °C":
             self.lab2.setText('K')
             self.lab5.setText('°C')
         else:
@@ -67,7 +66,7 @@ class MainWindow(QMainWindow):
         else:
             if self.list.currentText() == "K -> °C" and temp < 0:
                 
-                msg.setText("La température en Kelvin ne peut pas être négative ")
+                msg.setText("La température en Kelvin ne peut pas être négative !")
                 msg.exec()
             
 
