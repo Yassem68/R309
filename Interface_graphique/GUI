@@ -1,0 +1,14 @@
+import sys
+from PyQt6.QtWidgets import QApplication, QWidget
+
+class Fenetre(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Ma première fenêtre")
+        self.setGeometry(200, 200, 700, 400)
+        self.show()
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    fenetre = Fenetre()
+    app.exec()
