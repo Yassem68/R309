@@ -14,3 +14,5 @@ conn.send(b'CA VA OU QUOI ?')
 print(data)
 print ("Le serveur se ferme")
 conn.close()
+
+#python3 Documents/GitHub/R309/SOCKET/server.py

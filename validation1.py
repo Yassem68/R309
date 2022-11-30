@@ -48,12 +48,12 @@ if __name__ == "__main__":
     T = []
     task_threading()
     finish = time.perf_counter()
-    print(f"Threading Finished in {round(finish-start, 6)} second(s)")
+    print(f"Threading s'est fini en  {round(finish-start, 6)} second(s)")
     print("")
     start = time.perf_counter()
     pool_threading()
     finish = time.perf_counter()
-    print(f"POOL Finished in {round(finish-start, 6)} second(s)")
+    print(f"POOL s'est fini en  {round(finish-start, 6)} second(s)")
     print("")
 
     start = time.perf_counter()
