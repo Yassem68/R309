@@ -1,5 +1,0 @@
-SERVEUR                     |                   CLIENT
-
-
-ouverture socket
-

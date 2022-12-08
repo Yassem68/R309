@@ -11,4 +11,4 @@ print(data)
 
 client_socket.close()
 
-#python3 Documents/GitHub/R309/SOCKET/client.py
+

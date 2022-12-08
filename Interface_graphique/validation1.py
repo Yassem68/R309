@@ -28,6 +28,16 @@ class MainWindow(QMainWindow):
         self.labprenom.setText(f"Salut {prenom}")
     def __actionQuitter(self):
         QCoreApplication.exit(0)
-        
 
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    win = MainWindow()
+    win.show()
+    sys.exit(app.exec())
+
+
+    
+
+
+        
 
